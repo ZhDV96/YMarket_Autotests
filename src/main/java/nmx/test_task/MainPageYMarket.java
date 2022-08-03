@@ -30,7 +30,7 @@ public class MainPageYMarket extends MainPageYandex {
     //метод выбора второго товара в списке
     @Step("Клик по второму товару в раскрывшемся списке")
     public void clickSecondItem() {
-        secondItem.click();
+        secondItem.shouldBe(Condition.appear, Duration.ofSeconds(8000)).click();
     }
 
     //*метод объединяющий заполнение поля наименования товара
